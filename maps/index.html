@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portugal 2026 · Google My Maps restaurant imports</title>
+  <style>
+    :root { color-scheme: light; --green:#17463a; --cream:#fffdf8; --line:#d9d2c4; --muted:#5d675f; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:#eee8dc; color:#17251f; font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(900px,calc(100% - 28px)); margin:36px auto; padding:30px; border:1px solid var(--line); border-radius:22px; background:var(--cream); }
+    h1,h2 { color:var(--green); line-height:1.1; }
+    .note { padding:14px 16px; border-left:5px solid #bd6e4d; background:#fff4ef; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin:22px 0; }
+    .card { padding:18px; border:1px solid var(--line); border-radius:16px; background:white; }
+    a.button { display:inline-block; margin:4px 6px 4px 0; padding:10px 13px; border-radius:999px; background:var(--green); color:white; font-weight:750; text-decoration:none; }
+    li { margin:8px 0; }
+    small { color:var(--muted); }
+    @media (max-width:650px) { main { padding:20px; } .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="../">← Back to the trip guide</a></p>
+    <h1>Restaurant lists for Google My Maps</h1>
+    <p>Google Maps does not provide an API or bulk importer for personal Saved Lists. These CSV files are the supported practical alternative: import them as regional layers in one Google My Map, which can then be viewed in the Google Maps app.</p>
+    <div class="note"><strong>One-time setup:</strong> on a computer, open <a href="https://www.google.com/mymaps" target="_blank" rel="noopener">Google My Maps</a>, create a map, add a layer, and import a CSV below. Choose <strong>Location</strong> to position the markers and <strong>Name</strong> as the marker title. Repeat for each region.</div>
+    <div class="grid">
+      <section class="card"><h2>Madeira</h2><p>Funchal, Câmara de Lobos, and Caniçal food stops.</p><a class="button" href="madeira-restaurants.csv" download>Download CSV</a></section>
+      <section class="card"><h2>Porto</h2><p>Traditional Porto, modern dinners, Matosinhos seafood, and iconic snacks.</p><a class="button" href="porto-restaurants.csv" download>Download CSV</a></section>
+      <section class="card"><h2>Douro &amp; Central Portugal</h2><p>Pinhão, Lamego, Coimbra, Alcobaça, and Nazaré.</p><a class="button" href="douro-central-restaurants.csv" download>Download CSV</a></section>
+      <section class="card"><h2>Lisbon</h2><p>Restaurants, tascas, brunch, pastry, and food-focused wine stops.</p><a class="button" href="lisbon-restaurants.csv" download>Download CSV</a></section>
+    </div>
+    <p><a class="button" href="all-restaurants.csv" download>Download one combined CSV</a></p>
+    <h2>Important limitation</h2>
+    <p>An imported Google My Map does not automatically resync when these CSV files change. The download links remain stable, but after major guide updates you must replace or reimport the affected layer.</p>
+    <small>The “Guide status” and “Why it is listed” columns are included in each marker description so priority and context survive the import.</small>
+  </main>
+</body>
+</html>
