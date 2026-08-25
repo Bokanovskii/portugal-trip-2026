@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portugal 2026 · Google My Maps imports</title>
+  <title>Portugal 2026 · List data backups</title>
   <style>
     :root { color-scheme: light; --green:#17463a; --cream:#fffdf8; --line:#d9d2c4; --muted:#5d675f; }
     * { box-sizing: border-box; }
@@ -22,20 +22,10 @@
 <body>
   <main>
     <p><a href="../">← Back to the trip guide</a></p>
-    <h1>Portugal lists for Google My Maps</h1>
-    <p>Google Maps does not provide an API or bulk importer for personal Saved Lists. These CSV files are the supported practical alternative: import restaurant and shopping lists as regional layers in one Google My Map, which can then be viewed in the Google Maps app.</p>
-    <div class="note"><strong>Do this on a computer:</strong> Google My Maps can be viewed on a phone, but creating and importing layers works best in a desktop browser.</div>
-    <ol>
-      <li>Download one or more regional CSV files below.</li>
-      <li>Open <a href="https://www.google.com/mymaps" target="_blank" rel="noopener">Google My Maps</a>, sign in, and click <strong>Create a new map</strong>.</li>
-      <li>Click the map title and name it <strong>Portugal 2026 Restaurants</strong>.</li>
-      <li>Rename “Untitled layer” for the region, such as <strong>Madeira</strong>, then click <strong>Import</strong> and upload that region’s CSV.</li>
-      <li>When asked which column positions the markers, select <strong>Location</strong>.</li>
-      <li>When asked which column titles the markers, select <strong>Name</strong>.</li>
-      <li>Optionally choose <strong>Uniform style → Group places by → Guide status</strong> to color priorities, backups, and regional-specialty stops differently.</li>
-      <li>Click <strong>Add layer</strong> and repeat for Porto, Douro/Central Portugal, and Lisbon.</li>
-      <li>Click <strong>Share</strong> to give Kaya access or enable link sharing.</li>
-    </ol>
+    <h1>Portugal list data backups</h1>
+    <p>The native Google Maps Saved Lists now live in the trip owner’s account as <strong>Portugal restaurants</strong> and <strong>Portugal shopping</strong>. These CSV files remain available only as portable backups of the researched places.</p>
+    <div class="note"><strong>Current native-list totals:</strong> 55 restaurants/food stops and 43 resolvable shopping places. Fabrico Infinito was retained in the backup data but omitted from the native shopping list because it has no current Google Maps business listing.</div>
+    <h2>Restaurant backups</h2>
     <div class="grid">
       <section class="card"><h2>Madeira</h2><p>Funchal, Câmara de Lobos, and Caniçal food stops.</p><a class="button" href="madeira-restaurants.csv" download>Download CSV</a></section>
       <section class="card"><h2>Porto</h2><p>Traditional Porto, modern dinners, Matosinhos seafood, and iconic snacks.</p><a class="button" href="porto-restaurants.csv" download>Download CSV</a></section>
@@ -43,7 +33,7 @@
       <section class="card"><h2>Lisbon</h2><p>Restaurants, tascas, brunch, pastry, and food-focused wine stops.</p><a class="button" href="lisbon-restaurants.csv" download>Download CSV</a></section>
     </div>
     <p><a class="button" href="all-restaurants.csv" download>Download one combined CSV</a></p>
-    <h2>Shopping layers</h2>
+    <h2>Shopping backups</h2>
     <div class="grid">
       <section class="card"><h2>Madeira shopping</h2><p>Local ceramics, embroidery, womenswear, craft, and Madeira wine retail.</p><a class="button" href="madeira-shopping.csv" download>Download CSV</a></section>
       <section class="card"><h2>Porto shopping</h2><p>Portuguese Flannel, La Paz, ISTO., LOT, grooming, gifts, and vintage.</p><a class="button" href="porto-shopping.csv" download>Download CSV</a></section>
@@ -51,11 +41,7 @@
       <section class="card"><h2>Lisbon shopping</h2><p>Independent clothing, design, records, books, wine, conservas, and heritage craft.</p><a class="button" href="lisbon-shopping.csv" download>Download CSV</a></section>
     </div>
     <p><a class="button" href="all-shopping.csv" download>Download all shopping stops</a></p>
-    <h2>Important limitation</h2>
-    <p>An imported Google My Map does not automatically resync when these CSV files change. To update a layer, download the newer CSV, open the layer’s three-dot menu, choose <strong>Reimport and merge</strong>, then <strong>Replace all items</strong>.</p>
-    <h2>Open it on your phone</h2>
-    <p>Use the same Google account in the Google Maps app, then open <strong>You</strong> or <strong>Saved</strong> → <strong>Maps</strong>. Your “Portugal 2026 Restaurants” My Map will appear there as an overlay.</p>
-    <small>The “Guide status” and “Why it is listed” columns are included in each marker description so priority and context survive the import.</small>
+    <small>The files preserve the place name, location query, priority, description, and official links used to build the native lists.</small>
   </main>
 </body>
 </html>
